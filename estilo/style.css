@@ -1,0 +1,34 @@
+body {
+	background-color: blue;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	border: 1px solid white; /* Propriedade de borda */
+	color: white; /* Propriedade de cor da fonte */
+	font-size: 20px; /* Propriedade de tamanho da fonte */
+	text-decoration: none; /* Propriedade para tirar sublinhado dos link's */
+	width: 200px; /* Propriedade de Largura */
+	height: 40px; /* Propriedade de Altura */
+	line-height: 40px; /* Propriedade de centralização do conteúdo */
+	text-indent: 40px; /* Propriedade de indentação do texto */
+	display: block; /* Propriedade de desbloqueio de div */
+	background: url('../img/menu.png') no-repeat left; /* Escolha de cor de fundo */
+}
+
+a:hover {
+	background-position: right bottom;
+}
+
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#contato .contato a,
+#noticias .noticias a {
+	background-position: right bottom;
+}

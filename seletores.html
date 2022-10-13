@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mais Sobre Seletores</title>
+	<style>
+
+		/* Seletor Universal */
+
+		* {
+			border: 1px solid red;
+		}
+
+		/* Seletor de Texto */
+
+		h1 {
+			color: darkblue;
+		}
+
+		/* Seletor de Classe */
+
+		.teste {
+			background: darkblue; /* Seleciona todos os elementos do atributo de classe "teste" */
+		}
+
+		p.teste {
+			background: red; /* Seleciona o atributo de classe "teste", mas com especificando com o seletor de texto. */
+		}
+
+		/* Seleciona o elemento com várias classes */
+
+		#teste2 { 
+			background: yellow;
+		}
+
+		li>a {
+			color: yellow; /* Seleciona todos os elementos da tag "a" que estão dentro da tag <li> */
+		}
+
+		p + a {
+			color: blue;
+			background: yellow; /* Seleciona e modifica o segundo elemento, isolando o primeiro */
+		}
+
+		a p {
+			background: yellow;
+		}
+
+		h3 ~ p {
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Olá, mundo!</h1>
+
+	<h2 class="teste">Primeiro</h2>
+	<p class="teste">Lorem ipsum dolor sit amet.</p>
+	<div id="teste2">
+		<a href="">teste2</a>
+		teste2
+	</div>
+	<div  id="teste2">
+		teste2
+	</div>
+	<div id="teste2">
+		teste2
+	</div>
+
+	<div>
+		<li>
+			<a href="">Home</a>
+			<a href="">Contato</a>
+			<a href="">Ajuda</a>
+		</li>
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<a href="">Home</a>
+	<a href="">Home</a>
+	<a href="">Home</a>
+
+	<a>Teste 3
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p></a>
+
+	<h3>Teste 3</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</p>
+	
+
+</body>
+</html>
